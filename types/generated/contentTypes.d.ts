@@ -65,6 +65,7 @@ export interface AdminUser extends Schema.CollectionType {
       visible: false;
     };
   };
+  
   attributes: {
     firstname: Attribute.String &
       Attribute.SetMinMaxLength<{
@@ -102,8 +103,18 @@ export interface AdminUser extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<'admin::user', 'oneToOne', 'admin::user'> &
       Attribute.Private;
-  };
-}
+  
+    // Custom Fields
+    podcastName: Attribute.String & Attribute.Required, // Add podcast name
+    hostName: Attribute.String & Attribute.Required, // Add host name
+    listeners: Attribute.String & Attribute.Required, // Add listeners field
+  }
+  
+  
+  
+  
+
+
 
 export interface AdminRole extends Schema.CollectionType {
   collectionName: 'admin_roles';
