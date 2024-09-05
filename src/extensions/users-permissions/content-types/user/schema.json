@@ -65,6 +65,10 @@
       "inversedBy": "users",
       "configurable": false
     },
+    "ShowAudience": {
+      "type": "text",
+      "default": "Show Audience"
+    },
     "HostName": {
       "type": "string",
       "default": "Host Name"
@@ -76,10 +80,6 @@
     "ShowDescription": {
       "type": "text",
       "default": "Show Description"
-    },
-    "ShowAudience": {
-      "type": "text",
-      "default": "Show Audience"
     }
   }
 }
