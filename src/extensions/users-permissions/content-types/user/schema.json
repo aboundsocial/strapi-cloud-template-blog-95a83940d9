@@ -67,23 +67,19 @@
     },
     "HostName": {
       "type": "string",
-      "default": "Host Name",
-      "regex": "Host Name"
+      "default": "Host Name"
     },
     "ShowName": {
       "type": "string",
-      "default": "Show Name",
-      "regex": "Show Name"
+      "default": "Show Name"
     },
     "ShowDescription": {
       "type": "text",
-      "default": "Show Description",
-      "regex": "Show Description"
+      "default": "Show Description"
     },
     "ShowAudience": {
       "type": "text",
-      "default": "Show Audience",
-      "regex": "Show Audience"
+      "default": "Show Audience"
     }
   }
 }
